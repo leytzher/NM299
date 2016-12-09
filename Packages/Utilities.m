@@ -1,4 +1,7 @@
 (* Wolfram Language Package *)
+(* :Name: Netmath299`Utilities` *)
+(* :Author: Leytzher Muro, 2016 *)
+(* :Summary: This package provides basic utilities to estimate polygon sides and internal angles *)
 
 BeginPackage["Netmath299`Utilities`"]
 (* Exported symbols added here with SymbolName::usage *)
