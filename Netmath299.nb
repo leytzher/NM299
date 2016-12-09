@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3993,        129]
+NotebookOptionsPosition[      3533,        108]
+NotebookOutlinePosition[      3877,        123]
+CellTagsIndexPosition[      3834,        120]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"polyList", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"9.33", "+", 
+      RowBox[{"3", "I"}]}], ",", 
+     RowBox[{"15.87", "+", 
+      RowBox[{"3", "I"}]}], ",", 
+     RowBox[{"17.08", "+", 
+      RowBox[{"9.42", "I"}]}], ",", 
+     RowBox[{"14.75", "+", 
+      RowBox[{"8.2", "I"}]}], ",", 
+     RowBox[{"9.95", "+", 
+      RowBox[{"10.25", "I"}]}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6902324064406385`*^9, 3.69023244323428*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"polypoints", " ", "=", " ", 
+  RowBox[{"PolygonCoordinates", "@", "polyList"}]}]], "Input",
+ CellChangeTimes->{{3.6902324483682914`*^9, 3.690232453453087*^9}, {
+  3.690232484188066*^9, 3.6902325171147237`*^9}, {3.690232688426837*^9, 
+  3.690232691698227*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"9.33`", ",", "3.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"15.87`", ",", "3.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"17.08`", ",", "9.42`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"14.75`", ",", "8.2`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9.95`", ",", "10.25`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.690232517506668*^9, 3.690232692275014*^9, 
+  3.6902554659262094`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlotPolygon", "[", "polypoints", "]"}]], "Input",
+ CellChangeTimes->{{3.6902326935632734`*^9, 3.6902327068826914`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.019444444444444445`],
+      AbsoluteThickness[1.6], 
+     LineBox[{{9.33, 3.}, {15.87, 3.}, {17.08, 9.42}, {14.75, 8.2}, {9.95, 
+      10.25}, {9.33, 3.}}]}}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{9.208906250000002, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{9.33, 17.08}, {0, 10.25}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.6902327072839565`*^9, 3.6902327415013094`*^9, 
+  3.690255466048031*^9}]
+}, Open  ]]
+},
+WindowSize->{1680, 967},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 497, 15, 31, "Input"],
+Cell[CellGroupData[{
+Cell[1080, 39, 283, 5, 31, "Input"],
+Cell[1366, 46, 478, 14, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1881, 65, 143, 2, 31, "Input"],
+Cell[2027, 69, 1490, 36, 242, "Output"]
+}, Open  ]]
+}
+]
+*)
+
