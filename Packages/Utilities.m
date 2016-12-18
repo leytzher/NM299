@@ -22,6 +22,10 @@ CalculateCrossProduct::usage = "Calculate the cross product of 2 vectors defined
 
 PolygonAngles::usage = "Calculate interior angles of a polygon. It needs a list of vertices"
 
+SideRatios::usage = "Calculate ratio of side n to side 1 of the polygon"
+
+Alpha::usage = "Calculate the alpha powers based on the interior angles (beta): alpha = beta/Pi -1 "
+
 (* Function definition *)
 (***********************)
 
@@ -107,7 +111,10 @@ obtained from Cosine formula (dot product) *)
    
    ];
 
-
+SideRatios[sides_] := 
+  sides[[#]]/sides[[1]] & /@ Range[Length[sides]];
+  
+Alpha[interiorAngles_] := (interiorAngles/Pi) - 1;
 
 End[] (* End Private Context *)
 
